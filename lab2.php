@@ -71,7 +71,7 @@
         <br>
         <input type="submit" value="Login">
         <br>
-        <td><input type="reset" value="Reset now"></td>
+        <td><input type="reset" value="Reset now confirm"></td>
     </td>
 </tr>
 </table>
