@@ -145,6 +145,7 @@ body{
         <input type="text">
         <br>
         <input type="submit">
+        <input type="reset">
     
 
 
