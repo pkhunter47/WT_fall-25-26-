@@ -14,6 +14,9 @@ div {
 body{
     background-color:plum
 }
+div{
+    text-align:left
+}
 
 </style>
 <body>
@@ -124,7 +127,7 @@ body{
     <input type="checkbox">I reqire academic advising before final registration.
     <br>
 
-    <h2 style="color:Red;font-size:30px">Course Selection</h2>
+    <h2 style="color:Red;font-size:30px; text-align:left">Course Selection</h2>
     <hr color="Red">
     <br>
     <td>
