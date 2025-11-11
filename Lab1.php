@@ -38,6 +38,8 @@
     <input type="button">
     course:
     <input type="text">
+    <br>
+    <button type="button" >new button</button>
       
 
     
