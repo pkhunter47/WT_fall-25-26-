@@ -7,6 +7,7 @@
     <center>  
           <h1 id="pagetitle">Light Mode</h1>
     <button id="switchbutton" onclick="toggle()">Switch</button>
+    
 
 </center>
 

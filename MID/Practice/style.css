@@ -1,0 +1,65 @@
+#head1{
+
+    background-color: rgba(255, 235, 205, 0.085);
+}
+body{
+    background-color: snow;
+}
+#form1{
+
+    background-color: aliceblue;
+   margin: 0 auto;
+    box-shadow:  0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    height: 390px;
+    }
+#form2{
+
+    background-color: aliceblue;
+   margin: 0 auto;
+    box-shadow:  0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    height: 290px;
+    }
+#head2{
+    padding: 2px;
+    margin-left: 70px;
+    color:black
+
+}
+#name,#id,#password,#c_password,#email,#department{
+    width: 95%;
+    margin-top: 5px;
+    border-radius: 5px;
+    box-shadow: dimgray;
+    font-family: 'Times New Roman', Times, serif;
+}
+#button{
+
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 90px;
+    background-color: slateblue;
+    color: white;
+    cursor: pointer;
+    width: 120px;
+    height: 30px;
+    
+}
+#error {
+      margin-top: 10px;
+      color: red;
+      text-align: center;
+    }
+#output{
+    margin-top: 30px;
+      color: red;
+      text-align: center;
+
+}
