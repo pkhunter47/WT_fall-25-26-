@@ -34,7 +34,7 @@
 }
 #output-box{
     width:300px;
-    height:80px;
+    height:110px;
     margin-top:10px;
     border-radius:5px;
     background-color:rgb(149, 244, 182);
@@ -49,8 +49,16 @@
     border-radius: 10px;
     padding: 20px;
     width: 300px;
-    height: 450px;
+    height: 300px;
   
+}
+#activity{
+     width: 95%;
+    margin-top: 5px;
+    border-radius: 5px;
+    box-shadow: dimgray;
+    font-family: 'Times New Roman', Times, serif;
+
 }
 
 
@@ -85,6 +93,11 @@
 
 
     <form id="form2">
+        <center>
+        <h2>Activity section</h2>
+        </center>
+        <label>Activity Name:</label>
+        <input type="text" id="activity">
 
 
 
