@@ -38,6 +38,7 @@
     margin-top:10px;
     border-radius:5px;
     background-color:rgb(149, 244, 182);
+    color:black;
 
 }
 #form2{
@@ -87,7 +88,7 @@
     </style>
 </head>
 <body>
-    <form id="form1">
+    <form id="form1" onsubmit="handle1(event)">
         <center>
         <h2>Participant Register</h2>
         </center>
@@ -102,7 +103,7 @@
         <label>Confirm Password:</label>
         <input type="password" id="c_password">
 
-        <button type="submit" id="button">Register</button>
+        <button type="submit" id="button" >Register</button>
 
         <div id="output-box"></div>
         <div id="error1" style="color:red;"></div>
@@ -135,22 +136,24 @@
 
     <script>
         function handle1(){
+
+            event.preventDefault();
             var name=document.getElementById("name").value.trim();
             var email=document.getElementById("email").value.trim();
             var phone=document.getElementById("number").value.trim();
             var pass=document.getElementById("password").value.trim();
-            var cpass=document.getElementById("c_passwword").value.trim();
+            var cpass=document.getElementById("c_password").value.trim();
 
 
-            var errorDiv=document.getElementById("error1");
-            var outputDiv=document.getElementById("output-box");
+            var errorDiv=document.getElementById("error1").value;
+            var outputDiv=document.getElementById("output-box").value;
 
             errorDiv.innerHTML="";
             outputDiv.innerHTML="";
 
             if(name===""|| email===""||phone===""||pass===""||cpass===""){
-                errorDiv.innerHTML="All fields must be filled";
-                return false;
+                outputDiv.innerHTML="All fields must be filled";
+                return;
 
             }
         }
