@@ -116,7 +116,7 @@
     <br>
 
 
-    <form id="form2">
+    <form id="form2" onsubmit="return handle2()">
         <center>
         <h2>Activity section</h2>
         </center>
@@ -176,13 +176,25 @@
             
         }
 
-        funcion handle2(){
-             var activity = document.getElementById("activity").value.trim();
+        function handle2(){
+             var activityBox = document.getElementById("activity").value.trim();
     
-    var activityBox = document.getElementById("activitybox");
+
+    if(activity === "") {
+        activityBoxDiv.innerHTML = " Please enter an activity name";
+        return false;
 
         }
+        activityBoxDiv.innerHTML = `
+        Activity:${activity}
+              
+                
+                
+                
+                `;
+                return false;
 
+    }
 
 
     </script>
