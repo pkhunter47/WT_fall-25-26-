@@ -18,7 +18,7 @@
     height: 390px;
   
 }
-#name,#email,#number{
+#name,#email,#number,#password,#c_password{
      width: 95%;
     margin-top: 5px;
     border-radius: 5px;
@@ -40,6 +40,10 @@
         <input type="text" id="email">
         <label>Phone number:</label>
         <input type="number" id="number">
+        <label>Password:</label>
+        <input type="password" id="password">
+        <label>Confirm Password:</label>
+        <input type="password" id="c_password">
 
         
 
