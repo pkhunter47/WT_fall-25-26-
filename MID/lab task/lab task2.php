@@ -105,6 +105,7 @@
         <button type="submit" id="button">Register</button>
 
         <div id="output-box"></div>
+        <div id="error1" style="color:red;"></div>
 
         
 
@@ -126,10 +127,28 @@
 
         <button type="submit"id="remove">Remove</button>
         </div>
+        <div id="error2" style="color:red;"></div>
 
 
 
     </form>
+
+    <script>
+        function handle1(){
+            var name=document.getElementById("name").value.trim();
+            var email=document.getElementById("email").value.trim();
+            var phone=document.getElementById("number").value.trim();
+            var pass=document.getElementById("password").value.trim();
+            var cpass=document.getElementById("c_passwword").value.trim();
+
+
+            var errorDiv=document.getElementById("error1");
+            var outputDiv=document.getElementById("output-box");
+        }
+
+
+
+    </script>
     
 </body>
 </html>
