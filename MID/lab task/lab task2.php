@@ -15,7 +15,7 @@
     border-radius: 10px;
     padding: 20px;
     width: 300px;
-    height: 390px;
+    height: 400px;
   
 }
 #name,#email,#number,#password,#c_password{
@@ -27,9 +27,18 @@
 }
 #button{
     background-color:blue;
+    margin-top:10px;
     color:white;
     font-family: 'Times New Roman', Times, serif;
     border-radius: 5px;
+}
+#output-box{
+    width:300px;
+    height:100px;
+    margin-top:10px;
+    border-radius:5px;
+    background-color:rgb(149, 244, 182);
+
 }
 
 
@@ -52,6 +61,8 @@
         <input type="password" id="c_password">
 
         <button type="submit" id="button">Register</button>
+
+        <div id="output-box"></div>
 
         
 
