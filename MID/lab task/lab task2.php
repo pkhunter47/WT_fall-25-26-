@@ -60,6 +60,22 @@
     font-family: 'Times New Roman', Times, serif;
 
 }
+#activitysubmit{
+    background-color:blue;
+    margin-top:10px;
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 5px;
+
+}
+#activitybox{
+    width:300px;
+    height:110px;
+    margin-top:10px;
+    border-radius:5px;
+    background-color:rgb(149, 244, 182);
+
+}
 
 
     </style>
@@ -104,6 +120,7 @@
 
 
     </form>
+    <div id="activitybox"></div>
     
 </body>
 </html>
