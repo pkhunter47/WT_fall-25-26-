@@ -144,6 +144,15 @@
 
             var errorDiv=document.getElementById("error1");
             var outputDiv=document.getElementById("output-box");
+
+            errorDiv.innerHTML="";
+            outputDiv.innerHTML="";
+
+            if(name===""|| email===""||phone===""||pass===""||cpass===""){
+                errorDiv.innerHTML="All fields must be filled";
+                return false;
+
+            }
         }
 
 
