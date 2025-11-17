@@ -25,6 +25,12 @@
     box-shadow: dimgray;
     font-family: 'Times New Roman', Times, serif;
 }
+#button{
+    background-color:blue;
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 5px;
+}
 
 
     </style>
@@ -44,6 +50,8 @@
         <input type="password" id="password">
         <label>Confirm Password:</label>
         <input type="password" id="c_password">
+
+        <button type="submit" id="button">Register</button>
 
         
 
