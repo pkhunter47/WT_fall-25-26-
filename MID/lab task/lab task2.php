@@ -99,6 +99,8 @@
         <label>Activity Name:</label>
         <input type="text" id="activity">
 
+        <button type="submit"id="activitysubmit">Add activity</button>
+
 
 
     </form>
