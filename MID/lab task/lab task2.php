@@ -125,8 +125,8 @@
 
         <button type="submit"id="activitysubmit">Add activity</button>
         <div id="activitybox">
+             <button type="submit"id="remove">Remove</button>
 
-        <button type="submit"id="remove">Remove</button>
         </div>
         <div id="error2" style="color:red;"></div>
 
@@ -178,21 +178,18 @@
 
         function handle2(){
              var activityBox = document.getElementById("activity").value.trim();
+             var activityBoxDiv= document.getElementById("activitybox");
     
 
-    if(activity === "") {
+    if(activityBox=== "") {
         activityBoxDiv.innerHTML = " Please enter an activity name";
         return false;
 
         }
         activityBoxDiv.innerHTML = `
-        Activity:${activity}
-              
-                
-                
-                
-                `;
-                return false;
+    ${activityBox}
+         `;
+        return false;
 
     }
 
