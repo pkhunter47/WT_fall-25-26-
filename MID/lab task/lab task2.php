@@ -18,14 +18,28 @@
     height: 390px;
   
 }
+#name,#email,#number{
+     width: 95%;
+    margin-top: 5px;
+    border-radius: 5px;
+    box-shadow: dimgray;
+    font-family: 'Times New Roman', Times, serif;
+}
 
 
     </style>
 </head>
 <body>
     <form id="form1">
+        <center>
         <h2>Participant Register</h2>
+        </center>
         <label>Full name:</label>
+        <input type="text" id="name">
+        <label>Email:</label>
+        <input type="text" id="email">
+        <label>Phone number:</label>
+        <input type="number" id="number">
 
         
 
