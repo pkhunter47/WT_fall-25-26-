@@ -79,6 +79,8 @@
 #remove{
     margin-left:220px;
     margin-top:15px;
+    background-color:red;
+    color:white;
 }
 
 
