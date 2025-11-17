@@ -164,7 +164,8 @@
                 return false;
             }
             
-                outputDiv.innerHTML = ` 
+                outputDiv.innerHTML = `
+                Registration sucesfull <br>
                 Name: ${name}<br>
                 Email:${email}<br>
                 Phone:${phone}
@@ -173,6 +174,13 @@
                 `;
                 return false;
             
+        }
+
+        funcion handle2(){
+             var activity = document.getElementById("activity").value.trim();
+    
+    var activityBox = document.getElementById("activitybox");
+
         }
 
 
