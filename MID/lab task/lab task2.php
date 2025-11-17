@@ -88,7 +88,7 @@
     </style>
 </head>
 <body>
-    <form id="form1" onsubmit="handle1(event)">
+    <form id="form1" onsubmit="return handle1()">
         <center>
         <h2>Participant Register</h2>
         </center>
@@ -137,7 +137,6 @@
     <script>
         function handle1(){
 
-            event.preventDefault();
             var name=document.getElementById("name").value.trim();
             var email=document.getElementById("email").value.trim();
             var phone=document.getElementById("number").value.trim();
@@ -145,16 +144,31 @@
             var cpass=document.getElementById("c_password").value.trim();
 
 
-            var errorDiv=document.getElementById("error1").value;
-            var outputDiv=document.getElementById("output-box").value;
+            var errorDiv=document.getElementById("error1");
+            var outputDiv=document.getElementById("output-box");
 
-            errorDiv.innerHTML="";
-            outputDiv.innerHTML="";
+        
 
             if(name===""|| email===""||phone===""||pass===""||cpass===""){
-                outputDiv.innerHTML="All fields must be filled";
-                return;
+                outputDiv.innerHTML = "No field can be left empty ";
+                return false;
 
+            }
+            if(!email.include("@")){
+                outputDiv.innerHTML="Email must contain @";
+                return false;
+
+            }
+            if(pass!=c_pass){
+                outputDiv.innerHTML="password doesn't match";
+                return false;
+            }
+            else{
+                outputDiv.innerHTML=`
+                Name: ${name}<br>
+                
+                
+                `
             }
         }
 
