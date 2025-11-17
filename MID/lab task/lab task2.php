@@ -49,7 +49,7 @@
     border-radius: 10px;
     padding: 20px;
     width: 300px;
-    height: 300px;
+    height: 200px;
   
 }
 #activity{
@@ -70,11 +70,15 @@
 }
 #activitybox{
     width:300px;
-    height:110px;
+    height:50px;
     margin-top:10px;
     border-radius:5px;
-    background-color:rgb(149, 244, 182);
+    background-color:white
 
+}
+#remove{
+    margin-left:220px;
+    margin-top:15px;
 }
 
 
@@ -116,11 +120,14 @@
         <input type="text" id="activity">
 
         <button type="submit"id="activitysubmit">Add activity</button>
+        <div id="activitybox">
+
+        <button type="submit"id="remove">Remove</button>
+        </div>
 
 
 
     </form>
-    <div id="activitybox"></div>
     
 </body>
 </html>
