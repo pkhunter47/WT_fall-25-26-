@@ -15,7 +15,7 @@
     border-radius: 10px;
     padding: 20px;
     width: 300px;
-    height: 400px;
+    height: 450px;
   
 }
 #name,#email,#number,#password,#c_password{
@@ -34,11 +34,23 @@
 }
 #output-box{
     width:300px;
-    height:100px;
+    height:80px;
     margin-top:10px;
     border-radius:5px;
     background-color:rgb(149, 244, 182);
 
+}
+#form2{
+   
+
+    background-color: aliceblue;
+    margin: 0 auto;
+    box-shadow:  0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    height: 450px;
+  
 }
 
 
@@ -65,6 +77,14 @@
         <div id="output-box"></div>
 
         
+
+
+
+    </form>
+    <br>
+
+
+    <form id="form2">
 
 
 
