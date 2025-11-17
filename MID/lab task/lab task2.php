@@ -154,22 +154,25 @@
                 return false;
 
             }
-            if(!email.include("@")){
-                outputDiv.innerHTML="Email must contain @";
+            if(!email.includes("@")){
+                outputDiv.innerHTML = " Email must contain @ ";
                 return false;
 
             }
-            if(pass!=c_pass){
-                outputDiv.innerHTML="password doesn't match";
+            if(pass!=cpass){
+                outputDiv.innerHTML = " password doesn't match ";
                 return false;
             }
-            else{
-                outputDiv.innerHTML=`
+            
+                outputDiv.innerHTML = ` 
                 Name: ${name}<br>
+                Email:${email}<br>
+                Phone:${phone}
                 
                 
-                `
-            }
+                `;
+                return false;
+            
         }
 
 
