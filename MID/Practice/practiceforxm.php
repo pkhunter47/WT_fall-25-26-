@@ -4,8 +4,9 @@
   <meta charset="UTF-8" /> 
   <meta name="viewport" content="width=device-width, initial-scale=1" /> 
   <title>Practice</title> 
-</head> 
-<body> 
+  </head> 
+
+<body>
   <p>Current Array: <span id="arrayDisplay">[1, 2, 3, 4, 5]</span></p> 
  
   <button id="addNumberBtn">Add Number</button> 
