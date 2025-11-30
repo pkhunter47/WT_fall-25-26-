@@ -55,7 +55,7 @@
     <form id = "form" onsubmit="return handle()">
         <h2 id="text1">Student Registration</h2>
          <label>Full name:</label>
-        <input type="text" id="name">
+        <input type="text" id="name" required>
         <label>Email:</label>
         <input type="text" id="email">
         <label>Phone number:</label>
