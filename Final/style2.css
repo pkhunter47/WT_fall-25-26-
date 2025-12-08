@@ -1,0 +1,16 @@
+#form1{
+    background-color: bisque;
+    padding: 5px;
+    width: 450px;
+    height: 150px;
+
+    margin: 0 auto;
+}
+body{
+
+    background-color: cornsilk;
+}
+#name,#email,#pass{
+    margin:5px;
+
+}
