@@ -1,0 +1,29 @@
+body{
+
+    background-color:#87bdee6a;
+    
+}
+#form1{
+
+    background-color: aliceblue;
+    margin-top: 100px;
+    margin-left: 580px;
+    box-shadow:  0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    height: 390px;
+    }
+
+#name,#id,#password,#c_password,#email,#phonenumber{
+    width: 95%;
+    margin-top: 5px;
+    border-radius: 5px;
+    box-shadow: dimgray;
+    font-family: 'Times New Roman', Times, serif;
+}
+#regimage{
+    position: fixed;
+    top: 20px;     
+    left: 570px; 
+}
