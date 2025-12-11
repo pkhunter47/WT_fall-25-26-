@@ -24,6 +24,21 @@ body{
 }
 #regimage{
     position: fixed;
-    top: 20px;     
-    left: 570px; 
+    top: 130px;     
+    left: 605px; 
+}
+#button{
+
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 90px;
+    background-color: #4dc4e8d5;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    width: 120px;
+    height: 30px;
+    
 }
