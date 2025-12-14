@@ -14,13 +14,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $error="Passwords are not  correct!";
         echo $error;
-        exit;
+        exit();
         
     }
    
     if(!preg_match("/^[a-zA-Z ]*$/",$name)){
         echo "Names are allowed only";
-        exit;
+        exit();
 
     }
 
