@@ -70,7 +70,7 @@
         $error="";
 
 
-        if(empty($_POST["name"])){
+        if(empty($name)){
 
             $error="Name cannot be empty";
 

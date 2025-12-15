@@ -3,7 +3,7 @@
 <head>
     <title>Registration Form</title>
 </head>
-<link rel="stylesheet" href="designreg.css">
+<link rel="stylesheet" href="../CSS/designreg.css">
 <body>
     <form id="form1" method="post">
         <img src="11879738.png" alt="registration" srcset="" width="60px" height= "50px" id="regimage">
@@ -42,7 +42,7 @@
 
     <?php
 
-    include 'validationofreg.php';
+    include '../PHP/validationofreg.php';
 
     ?>
     
