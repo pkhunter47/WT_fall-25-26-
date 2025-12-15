@@ -22,7 +22,7 @@ if (!preg_match("/^[a-zA-Z ]*$/",$name))  // only letter and middle space
     $nameerror ="Only letters and white space allowed";
 }
  
-}
+},
  
 function test_input($data)
 {

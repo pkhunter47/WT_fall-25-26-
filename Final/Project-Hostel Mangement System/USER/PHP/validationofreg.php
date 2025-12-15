@@ -6,6 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $phonenumber= $_POST['phonenumber'];
     $password= $_POST['password'];
     $c_password= $_POST['c_password'];
+    $blood=$_POST["blood"];
     $error="";
 
 
@@ -23,6 +24,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
 
     }
+    if(empty($_POST["blood"])){
+        $error="Select your blood group";
+        echo $error;
+        exit(); 
+
+    }
 
     else{
 
@@ -35,8 +42,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "Email: " .$email. "<br>";
     echo "Phone Number: " .$phonenumber. "<br>";
     echo "Password: " .$password. "<br>";
+    echo "Blood Group:" .$blood. "<br>";
 
-    exit;
+    exit();
 
     }
 }
