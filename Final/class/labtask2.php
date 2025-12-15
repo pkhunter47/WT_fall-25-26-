@@ -101,6 +101,17 @@
         exit;
     }
 
+    else{
+        echo "<h2>Registration Successful</h2>";
+
+
+    echo "Name: " . $name . "<br>";
+    echo "Email: " .$email. "<br>";
+    
+    exit;
+
+    }
+
 
 
 
