@@ -55,3 +55,23 @@ body{
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
 }
+#facilities{
+    position: absolute;
+    left: 40px;
+    top: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+#list{
+    position: relative;
+    top:2px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #1d0be2e1;
+    height: 300px;
+    width: 200px;
+    border-radius: 8px;        
+    background-color: #f4f4ff; 
+}
