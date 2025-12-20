@@ -98,6 +98,14 @@
 
      </div> </div> 
     <script src="frontpagejs.js"></script>
+
+
+
+
+    <footer>
+        <pre>© 2025 Happy Life Hostel Management System. All rights reserved.</pre>
+        <pre>© Created by Happy Life Team</pre>
+    </footer>
     
 </body>
 </html>
