@@ -12,7 +12,7 @@ body{
     border-radius: 10px;
     padding: 20px;
     width: 300px;
-    height: 450px;
+    height: 520px;
     }
 
 #name,#id,#password,#c_password,#email,#phonenumber,#blood{
@@ -23,7 +23,7 @@ body{
     font-family: 'Times New Roman', Times, serif;
 }
 #regimage{
-    position: fixed;
+    position: absolute;
     top: 130px;     
     left: 605px; 
 }
@@ -41,4 +41,18 @@ body{
     width: 120px;
     height: 30px;
     
+}
+.error{
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+.success{
+    color: green;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
 }

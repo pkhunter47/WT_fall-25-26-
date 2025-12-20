@@ -1,51 +1,132 @@
 <?php
+
+$id = "";
+$name = "";
+$email = "";
+$phonenumber = "";
+$password = "";
+$c_password = "";
+$blood = "";
+
+$id_error = "";
+$name_error = "";
+$email_error = "";
+$phonenumber_error = "";
+$password_error = "";
+$c_password_error = "";
+$blood_error = "";
+
+$success_msg = "";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $id= $_POST["id"];
-    $name= $_POST['name'];
-    $email= $_POST['email'];
-    $phonenumber= $_POST['phonenumber'];
-    $password= $_POST['password'];
-    $c_password= $_POST['c_password'];
-    $blood=$_POST["blood"];
-    $error="";
 
 
-   
-    if ($password !== $c_password) {
+    if(empty($_POST["id"])){
+        $id_error="Student ID is required";
+        
+       
+    }
+    else{
+        $id= trim($_POST["id"]);
 
-        $error="Passwords are not  correct!";
-        echo $error;
+    }
+
+    if(empty($_POST["name"])){
+        $name_error="Name is required";
+       
+       
+    }
+    else{
+        $name= trim($_POST["name"]);
+        if (!preg_match("/^[a-zA-Z ]*$/", $name)) {
+            $name_error = "Only letters and spaces allowed in here!!";
+        }
+
+    }
+    if(empty($_POST["email"])){
+        $email_error="Email is required";
+        
+       
+    }
+    else{
+        $email= trim($_POST["email"]);
+
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            $email_error = "Invalid email format";
+        }
+
+    }
+    if(empty($_POST["phonenumber"])){
+        $phonenumber_error="Phone number is required";
+        
+       
+    }
+    else{
+        $phonenumber= trim($_POST["phonenumber"]);
+
+    }
+    if(empty($_POST["password"])){
+        $password_error="Password is required";
+        
+       
+    }
+    else{
+        if(strlen($_POST["password"]) < 6){
+            $password_error="Password must be at least 6 characters long";
+           
+       
+        }
+        $password= trim($_POST["password"]);
+
+    }
+    if(empty($_POST["c_password"])){
+        $c_password_error="Confirm your password";
+     
+       
+    }
+    else{
+        $c_password= trim($_POST["c_password"]);
+
+    }
+    if($password !== $c_password){
+        $password_error="Passwords do not match";
+        $c_password_error="Passwords do not match";
+       
+    }
+    if(empty($_POST["blood"]) || $_POST["blood"] == "Select group"){
+        $blood_error="Please select your blood group";
+        
+           }
+    else{
+        $blood= trim($_POST["blood"]);
+
+    }
+
+    if(empty($id_error) && empty($name_error) && empty($email_error) && empty($phonenumber_error) && empty($password_error) && empty($blood_error)){
+        $success_msg="Registration successful!";
+        echo $success_msg;
+        echo "<br>";
+        echo "Your Student ID is: " . $id."<br>";
+        echo "Name: " . $name."<br>";
+        echo "Email: " . $email."<br>";
+        echo "Phone Number: " . $phonenumber."<br>";
+        echo "Blood Group: " . $blood."<br>";
+        echo "<br>";
+
+
+        $id = "";
+        $name = "";
+        $email = "";
+        $phonenumber = "";
+        $password = "";
+        $c_password = "";
+        $blood = "";   
+
         exit();
         
-    }
-   
-    if(!preg_match("/^[a-zA-Z ]*$/",$name)){
-        echo "Names are allowed only";
-        exit();
 
-    }
-    if(empty($_POST["blood"])){
-        $error="Select your blood group";
-        echo $error;
-        exit(); 
+
 
     }
 
-    else{
-
-
-    echo "<h2>Registration Successful</h2>";
-
-
-    echo "Student ID: " . $id . "<br>";
-    echo "Name: " .$name. "<br>";
-    echo "Email: " .$email. "<br>";
-    echo "Phone Number: " .$phonenumber. "<br>";
-    echo "Password: " .$password. "<br>";
-    echo "Blood Group:" .$blood. "<br>";
-
-    exit();
-
-    }
 }
 ?>
