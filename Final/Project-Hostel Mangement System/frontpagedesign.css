@@ -276,6 +276,7 @@ top: 600px;
 .book_btn{
     padding:8px 15px;
     background-color: rgb(32, 32, 246);
+    font-family: 'Times New Roman', Times, serif;
     color: white;
     border: none;
     border-radius: 8px;
