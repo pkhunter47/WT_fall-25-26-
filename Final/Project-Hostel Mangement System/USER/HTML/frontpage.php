@@ -2,15 +2,15 @@
 
 <head>
     <title>Happy Life</title>
-    <link rel="stylesheet" href="frontpagedesign.css">
+    <link rel="stylesheet" href="../CSS/frontpagedesign.css">
 </head>
 <body>
     <div id="header">
-        <img src="images/building-vector-icon-white-background_855620-52.avif" alt="Logo" id="logo">
+        <img src="../../images/building-vector-icon-white-background_855620-52.avif" alt="Logo" id="logo">
         <h1><b><i>Welcome to Happy-Life</i></b></h1>
 
         <button type="submit" id="register" onclick="handle()">Register Now</button>
-        <button type="submit" id="login">Login</button>
+        <button type="submit" id="login" onclick="handle2()">Login</button>
 
     </div>
     <br>
@@ -33,7 +33,7 @@
      <div id="room_box">
 
 
-    <img src="images/2bed.jpg" alt="room image ">
+    <img src="../../images/2bed.jpg" alt="room image ">
 
     <div class="room_info"><h3>Room Info:</h3>
         <p>Room No:101 </p>
@@ -44,7 +44,7 @@
        <div id="room_box1">
 
 
-    <img src="images/1.jpg" alt="room image ">
+    <img src="../../images/1.jpg" alt="room image ">
 
     <div class="room_info1"><h3>Room Info:</h3>
         <p>Room No:102 </p>
@@ -55,7 +55,7 @@
       <div id="room_box2">
 
 
-    <img src="images/img3.jpg" alt="room image ">
+    <img src="../../images/img3.jpg" alt="room image ">
 
     <div class="room_info2"><h3>Room Info:</h3>
         <p>Room No:103 </p>
@@ -66,7 +66,7 @@
          <div id="room_box3">
 
 
-    <img src="images/img4.jpg" alt="room image ">
+    <img src="../../images/img4.jpg" alt="room image ">
 
     <div class="room_info3"><h3>Room Info:</h3>
         <p>Room No:104 </p>
@@ -77,7 +77,7 @@
      <div id="room_box4">
 
 
-    <img src="images/img5.png" alt="room image ">
+    <img src="../../images/img5.png" alt="room image ">
 
     <div class="room_info4"><h3>Room Info:</h3>
         <p>Room No:105 </p>
@@ -89,7 +89,7 @@
      <div id="room_box5">
 
 
-    <img src="images/3bed.avif" alt="room image ">
+    <img src="../../images/3bed.avif" alt="room image ">
 
     <div class="room_info5"><h3>Room Info:</h3>
         <p>Room No:106 </p>
@@ -97,7 +97,8 @@
 <button type="submit" class="book_btn">Book Now</button>
 
      </div> </div> 
-    <script src="frontpagejs.js"></script>
+    <script src="../JS/frontpagejs.js"></script>
+    <script src="../JS/gotologin.js"></script>
 
 
 
