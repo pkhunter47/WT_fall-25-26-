@@ -1,17 +1,17 @@
 <?php
 $id="";
-$name="";
+$email="";
 $password="";
 
 $success_msg="";
 
 $id_error="";
-$name_error="";
+$email_error="";
 $password_error="";
 
 if($_SERVER["REQUEST_METHOD"]=="POST"){
     $id=trim($_POST["id"]);
-    $name=trim($_POST["name"]);
+    $email=trim($_POST["email"]);
     $password=trim($_POST["password"]);
 
     $isValid=true;
@@ -21,8 +21,8 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         $isValid=false;
     }
 
-    if(empty($name) || !preg_match("/^[a-zA-Z ]*$/", $name)){
-        $name_error="Name is required and should contain only letters and spaces";
+    if(empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)){
+        $email_error="Email is required and must be a valid email address";
         $isValid=false;
     }
 

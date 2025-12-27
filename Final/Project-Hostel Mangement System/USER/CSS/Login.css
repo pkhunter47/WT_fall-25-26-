@@ -30,7 +30,7 @@ body{
     box-shadow: dimgray;
     font-family: 'Times New Roman', Times, serif;
 }
-#name{
+#email{
      width: 95%;
     margin-top: 5px;
     border-radius: 5px;
@@ -57,6 +57,21 @@ body{
     width: 120px;
     height: 30px;
     
+}
+#register_link{
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    color: #1023f6d5;
+    text-decoration: none;
+}
+#home_logo{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
 }
 .error{
     color: red;

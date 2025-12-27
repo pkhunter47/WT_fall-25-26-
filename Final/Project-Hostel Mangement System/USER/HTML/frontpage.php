@@ -38,7 +38,8 @@
     <div class="room_info"><h3>Room Info:</h3>
         <p>Room No:101 </p>
     <p>price: 10000tk/month</p>
-<button type="submit" class="book_btn">Book Now</button>
+<button type="submit" class="book_btn" onclick="notallowed()">Book Now</button>
+<script src="../JS/alertinbookwithoureg.js"></script>
 
      </div> </div> 
        <div id="room_box1">
@@ -49,7 +50,8 @@
     <div class="room_info1"><h3>Room Info:</h3>
         <p>Room No:102 </p>
     <p>price: 10000tk/month</p>
-<button type="submit" class="book_btn">Book Now</button>
+<button type="submit" class="book_btn" onclick="notallowed()">Book Now</button>
+<script src="../JS/alertinbookwithoureg.js"></script>
 
      </div> </div> 
       <div id="room_box2">
@@ -60,7 +62,8 @@
     <div class="room_info2"><h3>Room Info:</h3>
         <p>Room No:103 </p>
     <p>price: 10000tk/month</p>
-<button type="submit" class="book_btn">Book Now</button>
+<button type="submit" class="book_btn" onclick="notallowed()">Book Now</button>
+<script src="../JS/alertinbookwithoureg.js"></script>
 
      </div> </div> 
          <div id="room_box3">
@@ -71,7 +74,8 @@
     <div class="room_info3"><h3>Room Info:</h3>
         <p>Room No:104 </p>
     <p>price: 10000tk/month</p>
-<button type="submit" class="book_btn">Book Now</button>
+<button type="submit" class="book_btn" onclick="notallowed()">Book Now</button>
+<script src="../JS/alertinbookwithoureg.js"></script>
 
      </div> </div> 
      <div id="room_box4">
@@ -82,7 +86,8 @@
     <div class="room_info4"><h3>Room Info:</h3>
         <p>Room No:105 </p>
     <p>price: 10000tk/month</p>
-<button type="submit" class="book_btn">Book Now</button>
+<button type="submit" class="book_btn" onclick="notallowed()">Book Now</button>
+<script src="../JS/alertinbookwithoureg.js"></script>
 
      </div> </div> 
 
@@ -94,7 +99,8 @@
     <div class="room_info5"><h3>Room Info:</h3>
         <p>Room No:106 </p>
     <p>price: 10000tk/month</p>
-<button type="submit" class="book_btn">Book Now</button>
+<button type="submit" class="book_btn" onclick="notallowed()">Book Now</button>
+<script src="../JS/alertinbookwithoureg.js"></script>
 
      </div> </div> 
     <script src="../JS/frontpagejs.js"></script>

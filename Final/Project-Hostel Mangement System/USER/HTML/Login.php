@@ -8,6 +8,7 @@ include("../PHP/validationonlogin.php");
        <link rel="stylesheet" href ="../CSS/Login.css">
 </head>
 <body>
+    <img src="../../images/3d-house.png" alt="Home Logo" width="60px" height="60px" id="home_logo" onclick="location.href='frontpage.php'">
 
 <div class="login-box">
 
@@ -15,18 +16,20 @@ include("../PHP/validationonlogin.php");
         <img src="../../images/login.png" alt="login logo" width="80px" height="80px" id="login_image">
         <br>
 
-        <label>ID</label>
+
+        <label>Student-ID:</label>
         <input type="text" name="id" id="id" value="<?php echo $id  ?>">
 
-        <label>Name</label>
-        <input type="text" name="name" id="name" value="<?php echo $name  ?>">
+        <label>Email:</label>
+        <input type="text" name="email" id="email" value="<?php echo $email  ?>">
        
 
-        <label>Password</label>
+        <label>Password:</label>
         <input type="password" name="password" id="password" value="<?php echo $password ?>">
     
 
         <button type="submit" id="login_button">Login</button>
+        <a href="registration1.php" id="register_link">Don't have an account? Register here</a>
     </form>
 <?php
     if(!empty($id_error)){
