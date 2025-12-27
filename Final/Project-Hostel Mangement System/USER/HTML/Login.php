@@ -16,7 +16,6 @@ include("../PHP/validationonlogin.php");
         <img src="../../images/login.png" alt="login logo" width="80px" height="80px" id="login_image">
         <br>
 
-
         <label>Student-ID:</label>
         <input type="text" name="id" id="id" value="<?php echo $id  ?>">
 
