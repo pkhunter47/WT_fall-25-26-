@@ -34,8 +34,8 @@ include("../PHP/validationonlogin.php");
     if(!empty($id_error)){
         echo '<div class="error">'.$id_error.'</div>';
     }
-    if(!empty($name_error)){
-        echo '<div class="error">'.$name_error.'</div>';
+    if(!empty($email_error)){
+        echo '<div class="error">'.$email_error.'</div>';
     }
     if(!empty($password_error)){
         echo '<div class="error">'.$password_error.'</div>';
