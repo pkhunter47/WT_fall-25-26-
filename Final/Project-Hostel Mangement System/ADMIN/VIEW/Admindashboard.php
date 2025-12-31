@@ -45,6 +45,46 @@
         <h1>Welcome to the Admin Dashboard</h1>
 
 </div>
+
+
+<div id="insidecontent">
+    <form method="post" id="roomcounts">
+        <Label id="roomnum">6</Label>
+        <br>
+        <label id="infoofroom">Total Rooms</label>
+        <img src="../IMAGES/bed.png" alt="bedlogo" id="bedlogo">
+        </form>
+
+
+
+        <form method="post" id="studentcounts">
+        <!-- Students number ekhane bosbe through table from database -->
+
+
+        <label id="infoofstudents">Total Students</label>
+        <img src="../IMAGES/teamwork.png" alt="userslogo" id="userslogo">
+
+    </form>
+
+    <form method="post" id="pendingcomplaints">
+        <!-- Pending complaints number ekhane bosbe through table from database -->
+
+        <label id="infoofcomplaints">Pending Complaints</label>
+        <img src="../IMAGES/project-deadline.png" alt="complaintlogo" id="complaintlogo">
+    </form>
+
+    
+    <form method="post" id="revenue">
+        <!-- Pending complaints number ekhane bosbe through table from database -->
+
+        <label id="infoofrevenue">Revenue</label>
+        <img src="../IMAGES/money.png" alt="revenuelogo" id="revenuelogo">
+    </form>
+    
+
+
+
+</div>
     
 </body>
 </html>
