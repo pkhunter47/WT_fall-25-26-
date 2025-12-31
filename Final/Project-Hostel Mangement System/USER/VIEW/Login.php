@@ -16,8 +16,8 @@ include("../PHP/validationonlogin.php");
         <img src="../../images/login.png" alt="login logo" width="80px" height="80px" id="login_image">
         <br>
 
-        <label>Student-ID:</label>
-        <input type="text" name="id" id="id" value="<?php echo $id  ?>">
+        <label>Username:</label>
+        <input type="text" name="name" id="name" value="<?php echo $name  ?>">
 
         <label>Email:</label>
         <input type="text" name="email" id="email" value="<?php echo $email  ?>">
@@ -31,8 +31,8 @@ include("../PHP/validationonlogin.php");
         <a href="registration1.php" id="register_link">Don't have an account? Register here</a>
     </form>
 <?php
-    if(!empty($id_error)){
-        echo '<div class="error">'.$id_error.'</div>';
+    if(!empty($name_error)){
+        echo '<div class="error">'.$name_error.'</div>';
     }
     if(!empty($email_error)){
         echo '<div class="error">'.$email_error.'</div>';

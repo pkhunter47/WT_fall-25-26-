@@ -1,23 +1,23 @@
 <?php
-$id="";
+$name="";
 $email="";
 $password="";
 
 $success_msg="";
 
-$id_error="";
+$name_error="";
 $email_error="";
 $password_error="";
 
 if($_SERVER["REQUEST_METHOD"]=="POST"){
-    $id=trim($_POST["id"]);
+    $name=trim($_POST["name"]);
     $email=trim($_POST["email"]);
     $password=trim($_POST["password"]);
 
     $isValid=true;
 
-    if(empty($id)){
-        $id_error="ID is required";
+    if(empty($name)){
+        $name_error="Name is required";
         $isValid=false;
     }
 

@@ -1,6 +1,5 @@
 <?php
 
-$id = "";
 $name = "";
 $email = "";
 $phonenumber = "";
@@ -8,7 +7,7 @@ $password = "";
 $c_password = "";
 $blood = "";
 
-$id_error = "";
+
 $name_error = "";
 $email_error = "";
 $phonenumber_error = "";
@@ -20,15 +19,6 @@ $success_msg = "";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
-    if(empty($_POST["id"])){
-        $id_error="Student ID is required";
-        
-       
-    }
-    else{
-        $id= trim($_POST["id"]);
-
-    }
 
     if(empty($_POST["name"])){
         $name_error="Name is required";
@@ -62,6 +52,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     else{
         $phonenumber= trim($_POST["phonenumber"]);
+        if(!preg_match("/^[0-9]{11}$/", $_POST["phonenumber"])){
+            $phonenumber_error="Invalid phone number format";
+
+        }
 
     }
     if(empty($_POST["password"])){
@@ -101,11 +95,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     }
 
-    if(empty($id_error) && empty($name_error) && empty($email_error) && empty($phonenumber_error) && empty($password_error) && empty($blood_error)){
+    if(empty($name_error) && empty($email_error) && empty($phonenumber_error) && empty($password_error) && empty($blood_error)){
         $success_msg="Registration successful!";
         echo $success_msg;
         echo "<br>";
-        echo "Your Student ID is: " . $id."<br>";
         echo "Name: " . $name."<br>";
         echo "Email: " . $email."<br>";
         echo "Phone Number: " . $phonenumber."<br>";
@@ -113,7 +106,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "<br>";
 
 
-        $id = "";
         $name = "";
         $email = "";
         $phonenumber = "";

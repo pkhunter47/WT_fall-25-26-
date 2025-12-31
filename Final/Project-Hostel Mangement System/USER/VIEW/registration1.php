@@ -18,35 +18,31 @@
 
     <h2>Register NOW!</h2>
     </center>
-  
-
-     <label style="font-family: Times New Roman,Times, serif;" >Student-ID:</label>
-    <input type="number"id="id" name="id" value="<?php echo $id; ?>">
  
 
-    <label style="font-family: Times New Roman,Times, serif;" >Name:</label>
+    <label>Name:</label>
     <input type="text"id="name" name="name" value="<?php echo $name; ?>">
     
 
-    <label style="font-family: Times New Roman,Times, serif;" >E-mail:</label>
+    <label >E-mail:</label>
     <input type="text"id="email" name="email" value="<?php echo $email; ?>">
     
 
-    <label style="font-family: Times New Roman,Times, serif;" >Phone-Number:</label>
+    <label>Phone-Number:</label>
     <input type="number"id="phonenumber" name="phonenumber" value="<?php echo $phonenumber; ?>">
     
 
-    <label style="font-family: Times New Roman,Times, serif;" >Password:</label>
+    <label>Password:</label>
     <input type="password"id="password" name="password" value="<?php echo $password; ?>">
     
 
-    <label style="font-family: Times New Roman,Times, serif;" >Confirm password:</label>
+    <label>Confirm password:</label>
     <input type="password"id="c_password" name="c_password" value="<?php echo $c_password; ?>">
     
 
     <br>
 
-   <label style="font-family: Times New Roman,Times, serif;" >Blood Group:</label>
+   <label>Blood Group:</label>
         <select name="blood" id="blood">
             <option>Select group</option>
 
@@ -67,8 +63,6 @@
 
     <div class="error">
     <?php
-        echo $id_error;
-        echo "<br>";
         echo $name_error;
         echo "<br>";
         echo $email_error;

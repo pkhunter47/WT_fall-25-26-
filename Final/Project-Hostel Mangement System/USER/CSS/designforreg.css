@@ -15,7 +15,7 @@ body{
     position: relative;
     }
 
-#name,#id,#password,#c_password,#email,#phonenumber,#blood{
+#name,#password,#c_password,#email,#phonenumber,#blood{
     width: 95%;
     margin-top: 5px;
     border-radius: 5px;
