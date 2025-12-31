@@ -5,24 +5,36 @@
 </head>
 <link rel="stylesheet" href="../CSS/purchaseroom.css">
 <body>
-    <h2>Purchase Booking</h2>
-    
-    <form action="" method="post">
+    <div id="header">
+        <img src="../../images/building-vector-icon-white-background_855620-52.avif" alt="Logo" id="logo">
+
+        
+        <h1><b><i>Purchase Room</i></b></h1>
 
 
-   <div id="room_box">
+    </div>
+    <br>
+    <img src="../../images/back.png" alt="back logo" width="40px" height="40px" id="back_logo" onclick="location.href='frontpage.php'">
 
+    <form action=""method="post">
 
-    <img src="../../images/2bed.jpg" alt="room image ">
+    <div id="list">
+    <div id="room_box">
+    <img src="../../images/2bed.jpg" alt="room image " class="room_image">
 
-    <div class="room_info1"><h3>Room Info:</h3>
+    <div class="room_info">
+        <h3>Room Info:</h3>
         <p>Room No:101 </p>
-    <p>price: 10000tk/month</p>
+        <p id="price">Price: 10000tk/month</p>
+        <p><i>Fully furnished with cleaning services provided twice a week. Includes high-speed internet and access to the common room.</i></p>
+        <label>Pay-Amount:</label>
+        <input type="number" id="amount" name="amount" >
+        <button type="submit" class="book_btn">Purchase Now</button>
 
-
-     </div> </div> 
+ 
        
+</div>
+</div>
     </form>
-    
 </body>
 </html>
