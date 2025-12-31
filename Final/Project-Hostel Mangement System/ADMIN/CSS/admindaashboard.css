@@ -6,7 +6,7 @@ body{
 .panel{
 
     
-    border: 2px solid #17267df4;
+    border: 2px solid #2b2b2df4;
     border-radius: 2px;
     background-color: #7b7b7b;
     color:white;
@@ -368,4 +368,28 @@ body{
     top: 10px;
     width: 90px;
     height: 90px;
+}
+#recentbookingtable{
+    position: absolute;
+    top: 280px;
+    left: 270px;
+    width: 1180px;
+    height: 380px;
+    border: 2px solid #c6c6c6f4;
+    background-color: #f5f5f5;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    padding: 20px;
+    border: #000;
+    border-radius: 10px;
+    
+}
+#recentbookingsheading{
+    position: absolute;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+    top: 0px;
+    left: 10px;
 }

@@ -80,7 +80,17 @@
         <label id="infoofrevenue">Revenue</label>
         <img src="../IMAGES/money.png" alt="revenuelogo" id="revenuelogo">
     </form>
-    
+
+
+
+
+</div>
+<div id="recentbookingtable">
+    <form action="" method="post">
+        <h2 id="recentbookingsheading">Recent Bookings</h2>
+        
+
+    </form>
 
 
 
