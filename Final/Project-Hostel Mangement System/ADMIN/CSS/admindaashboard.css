@@ -45,6 +45,7 @@ body{
     text-align: center;
     padding-top: 5px;
     border-radius: 10px;
+    cursor: pointer;
 }
 #manageusers{
      position: absolute;
@@ -59,6 +60,7 @@ body{
     text-align: center;
     padding-top: 5px;
     border-radius: 10px;
+    cursor: pointer;
 }
 #assignstaff{
         position: absolute;
@@ -73,6 +75,7 @@ body{
         text-align: center;
         padding-top: 5px;
         border-radius: 10px;
+        cursor: pointer;
 }
 #managebookings{
         position: absolute;
@@ -85,8 +88,10 @@ body{
         font-family: 'Times New Roman', Times, serif;
         font-size: 24px;
         text-align: center;
+        text-align-last: right;
         padding-top: 5px;
         border-radius: 10px;
+        cursor: pointer;
 }
 #complaints{
         position: absolute;
@@ -101,6 +106,7 @@ body{
         text-align: center;
         padding-top: 5px;
         border-radius: 10px;
+        cursor: pointer;
 }
 #notices{
         position: absolute;
@@ -115,6 +121,7 @@ body{
         text-align: center;
         padding-top: 5px;
         border-radius: 10px;
+        cursor: pointer;
 }
 #Student-feedback{
         position: absolute;
@@ -127,8 +134,10 @@ body{
         font-family: 'Times New Roman', Times, serif;
         font-size: 24px;
         text-align: center;
+        text-align-last: right;
         padding-top: 5px;
         border-radius: 10px;
+        cursor: pointer;
 }
 #logout{
         position: absolute;
@@ -143,6 +152,7 @@ body{
         text-align: center;
         padding-top: 5px;
         border-radius: 10px;
+        cursor: pointer;
 }
 #navlist{
     list-style-type: none;
@@ -152,4 +162,68 @@ body{
     font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
     color: white;
+}
+#dashboardlogo{
+    position: absolute;
+    left: 20px;
+    top: 30px;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+#managestudentlogo{
+    position: absolute;
+    left: 15px;
+    top: 90px;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+#stafflogo{
+    position: absolute;
+    left: 15px;
+    top: 150px;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+#roombookinglogo{
+    position: absolute;
+    left: 15px;
+    top: 210px;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+#complaintslogo{
+    position: absolute;
+    left: 15px;
+    top: 270px;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+#noticeslogo{
+    position: absolute;
+    left: 15px;
+    top: 330px;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+#studentfeedbacklogo{
+    position: absolute;
+    left: 15px;
+    top: 390px;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+#logoutlogo{
+    position: absolute;
+    left: 15px;
+    top: 450px;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
 }
