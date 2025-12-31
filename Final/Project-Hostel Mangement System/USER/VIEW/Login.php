@@ -1,5 +1,5 @@
 <?php
-include("../PHP/validationonlogin.php");
+include("../CONTROL/validationonlogin.php");
 ?>
 <!DOCTYPE html>
 <html>
