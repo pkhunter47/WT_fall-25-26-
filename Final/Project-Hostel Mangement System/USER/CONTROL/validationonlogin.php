@@ -1,4 +1,6 @@
 <?php
+
+include '../MODEL/db.php';
 $name="";
 $email="";
 $password="";
@@ -32,9 +34,27 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     }
 
     if($isValid){
+
+        $conn = openConn();
+        $result = getuserforlogin($conn, $email, $password);
+
+        if ($result->num_rows == 0) {
+            $email_error="No user found with this email and password";
+            $conn->close();
+            return;
+        } else {
+            session_start();
+            $row = $result->fetch_assoc();
+            $_SESSION["username"] = $row["name"];
+            $_SESSION["email"] = $row["email"];
+            $_SESSION["phonenumber"] = $row["phonenumber"];
+            $_SESSION["blood"] = $row["blood"];
+            $conn->close();
+        }
         
         $success_msg="Login successful!";
     }
+    $conn->close();
 }
 
 

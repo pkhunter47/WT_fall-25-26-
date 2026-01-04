@@ -1,5 +1,7 @@
 <?php
 
+include '../MODEL/db.php';
+
 $name = "";
 $email = "";
 $phonenumber = "";
@@ -96,13 +98,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     if(empty($name_error) && empty($email_error) && empty($phonenumber_error) && empty($password_error) && empty($blood_error)){
+        $conn = openConn();
+        $hashedpassword = password_hash($password, PASSWORD_DEFAULT);
+        $result=addUser($conn, $name, $email, $phonenumber, $hashedpassword, $c_password, $blood);
+      
+      if($result===TRUE){
         $success_msg="Registration successful!";
         echo $success_msg;
-        echo "<br>";
-        echo "Name: " . $name."<br>";
-        echo "Email: " . $email."<br>";
-        echo "Phone Number: " . $phonenumber."<br>";
-        echo "Blood Group: " . $blood."<br>";
         echo "<br>";
 
 
@@ -113,12 +115,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $c_password = "";
         $blood = "";   
 
-        exit();
+      }else{
+        echo "Error: " . $sql . "<br>" . $conn->error;
         
 
 
 
     }
 
+    $conn->close();
 }
+
+
+}
+
 ?>
