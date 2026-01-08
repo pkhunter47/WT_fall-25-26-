@@ -8,12 +8,12 @@ include("../CONTROL/validationonlogin.php");
        <link rel="stylesheet" href ="../CSS/Login.css">
 </head>
 <body>
-    <img src="../../images/3d-house.png" alt="Home Logo" width="60px" height="60px" id="home_logo" onclick="location.href='frontpage.php'">
+    <img src="../images/3d-house.png" alt="Home Logo" width="60px" height="60px" id="home_logo" onclick="location.href='frontpage.php'">
 
 <div class="login-box">
 
     <form method="post" id="login_form" action="">
-        <img src="../../images/login.png" alt="login logo" width="80px" height="80px" id="login_image">
+        <img src="../images/login.png" alt="login logo" width="80px" height="80px" id="login_image">
         <br>
 
         <label>Username:</label>

@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="../CSS/purchaseroom.css">
 <body>
     <div id="header">
-        <img src="../../images/building-vector-icon-white-background_855620-52.avif" alt="Logo" id="logo">
+        <img src="../images/building-vector-icon-white-background_855620-52.avif" alt="Logo" id="logo">
 
         
         <h1><b><i>Purchase Room</i></b></h1>
@@ -20,7 +20,7 @@
 
     <div id="list">
     <div id="room_box">
-    <img src="../../images/2bed.jpg" alt="room image " class="room_image">
+    <img src="../images/2bed.jpg" alt="room image " class="room_image">
 
     <div class="room_info">
         <h3>Room Info:</h3>

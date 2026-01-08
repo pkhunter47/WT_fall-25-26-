@@ -6,7 +6,7 @@
 </head>
 <body>
     <div id="header">
-        <img src="../../images/building-vector-icon-white-background_855620-52.avif" alt="Logo" id="logo">
+        <img src="../images/building-vector-icon-white-background_855620-52.avif" alt="Logo" id="logo">
 
         
         <h1><b><i>Welcome to Happy-Life</i></b></h1>
