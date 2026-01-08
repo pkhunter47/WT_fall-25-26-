@@ -47,6 +47,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
     }
+     if (empty($email_error)) {
+        $conn = openConn();
+        if (isEmailExists($conn, $email)) {
+            $email_error = "Email already exists! Please try another one.";
+        }
+        $conn->close();
+    }
+
+
     if(empty($_POST["phonenumber"])){
         $phonenumber_error="Phone number is required";
         
@@ -98,32 +107,33 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     if(empty($name_error) && empty($email_error) && empty($phonenumber_error) && empty($password_error) && empty($blood_error)){
-        $conn = openConn();
-        $hashedpassword = password_hash($password, PASSWORD_DEFAULT);
-        $result=addUser($conn, $name, $email, $phonenumber, $hashedpassword, $c_password, $blood);
-      
-      if($result===TRUE){
+           $conn = openConn();
+        
+
+       $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+          $result = addUser($conn, $name, $email, $phonenumber, $hashed_password, $hashed_password, $blood);
+    if ($result === TRUE) {
         $success_msg="Registration successful!";
-        echo $success_msg;
-        echo "<br>";
-
-
-        $name = "";
+     $name = "";
         $email = "";
         $phonenumber = "";
         $password = "";
         $c_password = "";
-        $blood = "";   
-
-      }else{
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        $blood = "";  
         
+        header("Location: ../VIEW/Login.php");
+        exit();
 
-
-
+      
+    } else {
+        $success_msg = "Error: " . $conn->error;
     }
+       
+        
+    
 
-    $conn->close();
+
+ $conn->close();
 }
 
 
